@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1311042B2B25F78300F32705 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311042A2B25F78300F32705 /* Contacts.swift */; };
 		135D283C2B25D31F003D214F /* ContactsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135D283B2B25D31F003D214F /* ContactsCustomCell.swift */; };
 		1379616D2B25CA6C00E92571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379616C2B25CA6C00E92571 /* AppDelegate.swift */; };
 		1379616F2B25CA6C00E92571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379616E2B25CA6C00E92571 /* SceneDelegate.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1311042A2B25F78300F32705 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		135D283B2B25D31F003D214F /* ContactsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCustomCell.swift; sourceTree = "<group>"; };
 		137961692B25CA6C00E92571 /* Rozmova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rozmova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1379616C2B25CA6C00E92571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		131104292B25F77400F32705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1311042A2B25F78300F32705 /* Contacts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		135D283A2B25D300003D214F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		1379616B2B25CA6C00E92571 /* Rozmova */ = {
 			isa = PBXGroup;
 			children = (
+				131104292B25F77400F32705 /* Models */,
 				135D283A2B25D300003D214F /* Cell */,
 				137961A22B25CB8D00E92571 /* Controllers */,
 				137961A12B25CAE800E92571 /* Data */,
@@ -450,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1311042B2B25F78300F32705 /* Contacts.swift in Sources */,
 				137961A92B25CE9700E92571 /* MessagesViewController.swift in Sources */,
 				135D283C2B25D31F003D214F /* ContactsCustomCell.swift in Sources */,
 				1379616D2B25CA6C00E92571 /* AppDelegate.swift in Sources */,

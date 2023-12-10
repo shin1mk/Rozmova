@@ -10,6 +10,8 @@ import SnapKit
 import Contacts
 
 final class ContactsViewController: UIViewController {
+    private var contactsArray: [ContactModel] = []
+    
     //MARK: Properties
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -23,6 +25,8 @@ final class ContactsViewController: UIViewController {
         super.viewDidLoad()
         setupConstraints()
         setupTableView()
+        fetchContacts()
+        
     }
     //MARK: Methods
     private func setupConstraints() {
@@ -41,22 +45,55 @@ final class ContactsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    // получаем контакты
+    private func fetchContacts() {
+        // Создайте экземпляр CNContactStore
+        let contactStore = CNContactStore()
+        // Запрос на получение контактов
+        let keysToFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey]
+        let request = CNContactFetchRequest(keysToFetch: keysToFetch as [CNKeyDescriptor])
+        // Используйте GCD для выполнения кода в фоновом потоке
+        DispatchQueue.global(qos: .background).async {
+            do {
+                try contactStore.enumerateContacts(with: request) { (contact, _) in
+                    // Обработка полученного контакта
+                    let name = "\(contact.givenName) \(contact.familyName)"
+                    let phoneNumber = contact.phoneNumbers.first?.value.stringValue ?? "Нет номера"
+
+                    // Создайте вашу модель данных и добавьте ее в источник данных вашей таблицы
+                    let contactModel = ContactModel(name: name, phoneNumber: phoneNumber)
+                    self.contactsArray.append(contactModel)
+                }
+                // После того как все контакты добавлены, перезагрузите таблицу на главном потоке
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            } catch {
+                print("Error fetching contacts: \(error)")
+            }
+        }
+    }
+
 }
 //MARK: extension TableView
 extension ContactsViewController: UITableViewDelegate, UITableViewDataSource{
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return contactsArray.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCustomCell", for: indexPath) as! ContactsCustomCell
 
-        cell.titleLabel.text = "Имя контакта"
-        cell.subtitleLabel.text = "Номер телефона"
+        let contact = contactsArray[indexPath.row]
+        cell.titleLabel.text = contact.name
+        cell.subtitleLabel.text = contact.phoneNumber
         cell.backgroundColor = .clear
+
         return cell
     }
 
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40.0
     }
