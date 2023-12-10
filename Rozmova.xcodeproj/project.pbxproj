@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1379616D2B25CA6C00E92571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379616C2B25CA6C00E92571 /* AppDelegate.swift */; };
+		1379616F2B25CA6C00E92571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379616E2B25CA6C00E92571 /* SceneDelegate.swift */; };
+		137961712B25CA6C00E92571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137961702B25CA6C00E92571 /* ViewController.swift */; };
+		137961742B25CA6C00E92571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137961722B25CA6C00E92571 /* Main.storyboard */; };
+		137961772B25CA6C00E92571 /* Rozmova.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 137961752B25CA6C00E92571 /* Rozmova.xcdatamodeld */; };
+		137961792B25CA6D00E92571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137961782B25CA6D00E92571 /* Assets.xcassets */; };
+		1379617C2B25CA6D00E92571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1379617A2B25CA6D00E92571 /* LaunchScreen.storyboard */; };
+		137961872B25CA6D00E92571 /* RozmovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137961862B25CA6D00E92571 /* RozmovaTests.swift */; };
+		137961912B25CA6D00E92571 /* RozmovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137961902B25CA6D00E92571 /* RozmovaUITests.swift */; };
+		137961932B25CA6D00E92571 /* RozmovaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137961922B25CA6D00E92571 /* RozmovaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		137961832B25CA6D00E92571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137961612B25CA6C00E92571 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 137961682B25CA6C00E92571;
+			remoteInfo = Rozmova;
+		};
+		1379618D2B25CA6D00E92571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137961612B25CA6C00E92571 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 137961682B25CA6C00E92571;
+			remoteInfo = Rozmova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		137961692B25CA6C00E92571 /* Rozmova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rozmova.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1379616C2B25CA6C00E92571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1379616E2B25CA6C00E92571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		137961702B25CA6C00E92571 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		137961732B25CA6C00E92571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		137961762B25CA6C00E92571 /* Rozmova.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rozmova.xcdatamodel; sourceTree = "<group>"; };
+		137961782B25CA6D00E92571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1379617B2B25CA6D00E92571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1379617D2B25CA6D00E92571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		137961822B25CA6D00E92571 /* RozmovaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RozmovaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		137961862B25CA6D00E92571 /* RozmovaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RozmovaTests.swift; sourceTree = "<group>"; };
+		1379618C2B25CA6D00E92571 /* RozmovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RozmovaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		137961902B25CA6D00E92571 /* RozmovaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RozmovaUITests.swift; sourceTree = "<group>"; };
+		137961922B25CA6D00E92571 /* RozmovaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RozmovaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		137961662B25CA6C00E92571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1379617F2B25CA6D00E92571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137961892B25CA6D00E92571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		137961602B25CA6C00E92571 = {
+			isa = PBXGroup;
+			children = (
+				1379616B2B25CA6C00E92571 /* Rozmova */,
+				137961852B25CA6D00E92571 /* RozmovaTests */,
+				1379618F2B25CA6D00E92571 /* RozmovaUITests */,
+				1379616A2B25CA6C00E92571 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1379616A2B25CA6C00E92571 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				137961692B25CA6C00E92571 /* Rozmova.app */,
+				137961822B25CA6D00E92571 /* RozmovaTests.xctest */,
+				1379618C2B25CA6D00E92571 /* RozmovaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1379616B2B25CA6C00E92571 /* Rozmova */ = {
+			isa = PBXGroup;
+			children = (
+				1379616C2B25CA6C00E92571 /* AppDelegate.swift */,
+				1379616E2B25CA6C00E92571 /* SceneDelegate.swift */,
+				137961702B25CA6C00E92571 /* ViewController.swift */,
+				137961722B25CA6C00E92571 /* Main.storyboard */,
+				137961782B25CA6D00E92571 /* Assets.xcassets */,
+				1379617A2B25CA6D00E92571 /* LaunchScreen.storyboard */,
+				1379617D2B25CA6D00E92571 /* Info.plist */,
+				137961752B25CA6C00E92571 /* Rozmova.xcdatamodeld */,
+			);
+			path = Rozmova;
+			sourceTree = "<group>";
+		};
+		137961852B25CA6D00E92571 /* RozmovaTests */ = {
+			isa = PBXGroup;
+			children = (
+				137961862B25CA6D00E92571 /* RozmovaTests.swift */,
+			);
+			path = RozmovaTests;
+			sourceTree = "<group>";
+		};
+		1379618F2B25CA6D00E92571 /* RozmovaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				137961902B25CA6D00E92571 /* RozmovaUITests.swift */,
+				137961922B25CA6D00E92571 /* RozmovaUITestsLaunchTests.swift */,
+			);
+			path = RozmovaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		137961682B25CA6C00E92571 /* Rozmova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137961962B25CA6D00E92571 /* Build configuration list for PBXNativeTarget "Rozmova" */;
+			buildPhases = (
+				137961652B25CA6C00E92571 /* Sources */,
+				137961662B25CA6C00E92571 /* Frameworks */,
+				137961672B25CA6C00E92571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rozmova;
+			productName = Rozmova;
+			productReference = 137961692B25CA6C00E92571 /* Rozmova.app */;
+			productType = "com.apple.product-type.application";
+		};
+		137961812B25CA6D00E92571 /* RozmovaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137961992B25CA6D00E92571 /* Build configuration list for PBXNativeTarget "RozmovaTests" */;
+			buildPhases = (
+				1379617E2B25CA6D00E92571 /* Sources */,
+				1379617F2B25CA6D00E92571 /* Frameworks */,
+				137961802B25CA6D00E92571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				137961842B25CA6D00E92571 /* PBXTargetDependency */,
+			);
+			name = RozmovaTests;
+			productName = RozmovaTests;
+			productReference = 137961822B25CA6D00E92571 /* RozmovaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1379618B2B25CA6D00E92571 /* RozmovaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1379619C2B25CA6D00E92571 /* Build configuration list for PBXNativeTarget "RozmovaUITests" */;
+			buildPhases = (
+				137961882B25CA6D00E92571 /* Sources */,
+				137961892B25CA6D00E92571 /* Frameworks */,
+				1379618A2B25CA6D00E92571 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1379618E2B25CA6D00E92571 /* PBXTargetDependency */,
+			);
+			name = RozmovaUITests;
+			productName = RozmovaUITests;
+			productReference = 1379618C2B25CA6D00E92571 /* RozmovaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		137961612B25CA6C00E92571 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					137961682B25CA6C00E92571 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					137961812B25CA6D00E92571 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 137961682B25CA6C00E92571;
+					};
+					1379618B2B25CA6D00E92571 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 137961682B25CA6C00E92571;
+					};
+				};
+			};
+			buildConfigurationList = 137961642B25CA6C00E92571 /* Build configuration list for PBXProject "Rozmova" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 137961602B25CA6C00E92571;
+			productRefGroup = 1379616A2B25CA6C00E92571 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				137961682B25CA6C00E92571 /* Rozmova */,
+				137961812B25CA6D00E92571 /* RozmovaTests */,
+				1379618B2B25CA6D00E92571 /* RozmovaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		137961672B25CA6C00E92571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1379617C2B25CA6D00E92571 /* LaunchScreen.storyboard in Resources */,
+				137961792B25CA6D00E92571 /* Assets.xcassets in Resources */,
+				137961742B25CA6C00E92571 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137961802B25CA6D00E92571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1379618A2B25CA6D00E92571 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		137961652B25CA6C00E92571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137961712B25CA6C00E92571 /* ViewController.swift in Sources */,
+				1379616D2B25CA6C00E92571 /* AppDelegate.swift in Sources */,
+				137961772B25CA6C00E92571 /* Rozmova.xcdatamodeld in Sources */,
+				1379616F2B25CA6C00E92571 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1379617E2B25CA6D00E92571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137961872B25CA6D00E92571 /* RozmovaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137961882B25CA6D00E92571 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137961912B25CA6D00E92571 /* RozmovaUITests.swift in Sources */,
+				137961932B25CA6D00E92571 /* RozmovaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		137961842B25CA6D00E92571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 137961682B25CA6C00E92571 /* Rozmova */;
+			targetProxy = 137961832B25CA6D00E92571 /* PBXContainerItemProxy */;
+		};
+		1379618E2B25CA6D00E92571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 137961682B25CA6C00E92571 /* Rozmova */;
+			targetProxy = 1379618D2B25CA6D00E92571 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		137961722B25CA6C00E92571 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				137961732B25CA6C00E92571 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1379617A2B25CA6D00E92571 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1379617B2B25CA6D00E92571 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		137961942B25CA6D00E92571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		137961952B25CA6D00E92571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		137961972B25CA6D00E92571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F8NF33WRR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rozmova/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.Rozmova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		137961982B25CA6D00E92571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F8NF33WRR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rozmova/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.Rozmova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1379619A2B25CA6D00E92571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F8NF33WRR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.RozmovaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rozmova.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rozmova";
+			};
+			name = Debug;
+		};
+		1379619B2B25CA6D00E92571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F8NF33WRR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.RozmovaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rozmova.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rozmova";
+			};
+			name = Release;
+		};
+		1379619D2B25CA6D00E92571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F8NF33WRR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.RozmovaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rozmova;
+			};
+			name = Debug;
+		};
+		1379619E2B25CA6D00E92571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5F8NF33WRR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.RozmovaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rozmova;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		137961642B25CA6C00E92571 /* Build configuration list for PBXProject "Rozmova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137961942B25CA6D00E92571 /* Debug */,
+				137961952B25CA6D00E92571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		137961962B25CA6D00E92571 /* Build configuration list for PBXNativeTarget "Rozmova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137961972B25CA6D00E92571 /* Debug */,
+				137961982B25CA6D00E92571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		137961992B25CA6D00E92571 /* Build configuration list for PBXNativeTarget "RozmovaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1379619A2B25CA6D00E92571 /* Debug */,
+				1379619B2B25CA6D00E92571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1379619C2B25CA6D00E92571 /* Build configuration list for PBXNativeTarget "RozmovaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1379619D2B25CA6D00E92571 /* Debug */,
+				1379619E2B25CA6D00E92571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		137961752B25CA6C00E92571 /* Rozmova.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				137961762B25CA6C00E92571 /* Rozmova.xcdatamodel */,
+			);
+			currentVersion = 137961762B25CA6C00E92571 /* Rozmova.xcdatamodel */;
+			path = Rozmova.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 137961612B25CA6C00E92571 /* Project object */;
+}
