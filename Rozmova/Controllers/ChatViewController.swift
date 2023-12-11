@@ -61,12 +61,23 @@ class ChatViewController: UIViewController, InputBarAccessoryViewDelegate, UITab
     public func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
         // Handle sending logic here
         print("Send button pressed with text: \(text)")
+
         // Добавьте свой код для отправки сообщения на сервер или отображения на экране
         // Например, добавим текст в какой-то массив сообщений
-        let newMessage = "You: " + text
+
+        let currentDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+
+        let formattedDate = dateFormatter.string(from: currentDate)
+        let newMessage = "You: \(text)"
+
         messages.append(newMessage)
+        print("Messages array after adding a new message: \(messages) + \(formattedDate) ")
+
         // Обновляем таблицу для отображения нового сообщения
         tableView.reloadData()
+
         // Очистим текстовое поле после отправки
         inputBar.inputTextView.text = ""
     }
