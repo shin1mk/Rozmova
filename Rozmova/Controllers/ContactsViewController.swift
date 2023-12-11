@@ -77,11 +77,11 @@ final class ContactsViewController: UIViewController {
 }
 //MARK: extension TableView
 extension ContactsViewController: UITableViewDelegate, UITableViewDataSource{
-
+    // количество контактов котоыре показываем
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactsArray.count
     }
-
+    // содержимое ячеки
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactsCustomCell", for: indexPath) as! ContactsCustomCell
 
@@ -92,8 +92,20 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource{
 
         return cell
     }
-
-    
+    // Нажатие на ячейку
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedContact = contactsArray[indexPath.row]
+        // Создайте экземпляр ChatViewController
+        let chatViewController = ChatViewController()
+        // Настройте chatViewController с данными выбранного контакта
+        chatViewController.title = selectedContact.name
+        // Другие настройки чата...
+        // Отобразите chatViewController
+        navigationController?.pushViewController(chatViewController, animated: true)
+        // Уберите подсветку (выделение) ячейки
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    // высота
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40.0
     }

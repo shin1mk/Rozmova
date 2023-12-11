@@ -7,6 +7,7 @@ target 'Rozmova' do
 
   # Pods for Rozmova
   pod 'SnapKit'
+  pod 'MessageKit'
 
   target 'RozmovaTests' do
     inherit! :search_paths

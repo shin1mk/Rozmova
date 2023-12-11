@@ -8,10 +8,10 @@
 import UIKit
 import SnapKit
 
-final class MessagesViewController: UIViewController {
+class MessagesViewController: UIViewController {
     //MAKR: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .black
     }
 }
