@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1311042B2B25F78300F32705 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311042A2B25F78300F32705 /* Contacts.swift */; };
+		131A74EC2B26DFFA00E6A166 /* MessageCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131A74EB2B26DFFA00E6A166 /* MessageCustomCell.swift */; };
 		131C0F1A2B26155E0002A1DD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131C0F192B26155E0002A1DD /* ChatViewController.swift */; };
 		135D283C2B25D31F003D214F /* ContactsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135D283B2B25D31F003D214F /* ContactsCustomCell.swift */; };
 		1379616D2B25CA6C00E92571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379616C2B25CA6C00E92571 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		1311042A2B25F78300F32705 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		131A74EB2B26DFFA00E6A166 /* MessageCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCustomCell.swift; sourceTree = "<group>"; };
 		131C0F192B26155E0002A1DD /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		135D283B2B25D31F003D214F /* ContactsCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCustomCell.swift; sourceTree = "<group>"; };
 		137961692B25CA6C00E92571 /* Rozmova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rozmova.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				135D283B2B25D31F003D214F /* ContactsCustomCell.swift */,
+				131A74EB2B26DFFA00E6A166 /* MessageCustomCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1311042B2B25F78300F32705 /* Contacts.swift in Sources */,
+				131A74EC2B26DFFA00E6A166 /* MessageCustomCell.swift in Sources */,
 				137961A92B25CE9700E92571 /* MessagesViewController.swift in Sources */,
 				135D283C2B25D31F003D214F /* ContactsCustomCell.swift in Sources */,
 				1379616D2B25CA6C00E92571 /* AppDelegate.swift in Sources */,

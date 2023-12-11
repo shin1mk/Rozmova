@@ -11,7 +11,6 @@ import Contacts
 
 final class ContactsViewController: UIViewController {
     private var contactsArray: [ContactModel] = []
-    
     //MARK: Properties
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -107,6 +106,6 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource{
     }
     // высота
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40.0
+        return 42.0
     }
 }

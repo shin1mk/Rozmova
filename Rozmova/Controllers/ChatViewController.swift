@@ -9,6 +9,11 @@ import UIKit
 import MessageKit
 import InputBarAccessoryView
 
+enum MessageAlignment {
+    case left
+    case right
+}
+
 class ChatViewController: UIViewController, InputBarAccessoryViewDelegate, UITableViewDelegate, UITableViewDataSource {
     var messages: [String] = []  // массив для хранения сообщений
     var messageInputBar = InputBarAccessoryView()
@@ -20,7 +25,6 @@ class ChatViewController: UIViewController, InputBarAccessoryViewDelegate, UITab
         configureTableView()
         setupConstraints()
         registerForKeyboardNotifications()
-        
     }
     
     deinit {
@@ -39,7 +43,7 @@ class ChatViewController: UIViewController, InputBarAccessoryViewDelegate, UITab
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(MessageCustomCell.self, forCellReuseIdentifier: "MessageCustomCell")
     }
     
     private func setupConstraints() {
@@ -54,8 +58,7 @@ class ChatViewController: UIViewController, InputBarAccessoryViewDelegate, UITab
         }
     }
     
-    
-    func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
+    public func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
         // Handle sending logic here
         print("Send button pressed with text: \(text)")
         // Добавьте свой код для отправки сообщения на сервер или отображения на экране
@@ -73,10 +76,15 @@ extension ChatViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = messages[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCustomCell", for: indexPath) as! MessageCustomCell
+        cell.messageLabel.text = messages[indexPath.row]
+        // Установите alignment в зависимости от отправителя
+        cell.alignment = messages[indexPath.row].starts(with: "You:") ? .right : .left
+        // Установите цвет облачка в зависимости от отправителя
+        cell.bubbleView.backgroundColor = messages[indexPath.row].starts(with: "You:") ? .systemBlue : .systemGray
+
         return cell
     }
 }

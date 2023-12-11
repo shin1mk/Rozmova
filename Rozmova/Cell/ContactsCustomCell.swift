@@ -11,13 +11,13 @@ import UIKit
 
 final class ContactsCustomCell: UITableViewCell {
     //MARK: Properties
-    let titleLabel: UILabel = {
+    public let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 15)
         label.textColor = .white
         return label
     }()
-    let subtitleLabel: UILabel = {
+    public let subtitleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13)
         label.textColor = .systemGray
