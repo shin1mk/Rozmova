@@ -12,6 +12,6 @@ class MessagesViewController: UIViewController {
     //MAKR: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.backgroundColor = .red
     }
 }
